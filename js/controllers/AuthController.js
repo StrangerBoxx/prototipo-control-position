@@ -34,6 +34,6 @@ class AuthController {
             explorer: () => this.explorerController.init(),
             routes:   () => this.routesController.init()
         });
-        this.explorerController.init();
+        this.routesController.init();
     }
 }

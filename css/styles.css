@@ -217,6 +217,7 @@ a:hover { color: #4a84c4; }
 .submenu-item a:hover { color: #fff; }
 .submenu-item.active { background: #356CA9; }
 .submenu-item.active a { color: #fff; }
+.submenu-item--disabled { opacity: 0.4; pointer-events: none; cursor: not-allowed; }
 .app-sider.collapsed .submenu-title-text,
 .app-sider.collapsed .submenu-arrow,
 .app-sider.collapsed .submenu-items { display: none; }

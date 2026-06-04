@@ -29,7 +29,7 @@ class DashboardView {
                                 <span class="submenu-arrow"></span>
                             </div>
                             <ul class="submenu-items">
-                                <li class="submenu-item active" id="nav-explorer">
+                                <li class="submenu-item submenu-item--disabled" id="nav-explorer">
                                     <a href="#">Bsale Explorer</a>
                                 </li>
                             </ul>
@@ -43,7 +43,7 @@ class DashboardView {
                                 <span class="submenu-arrow"></span>
                             </div>
                             <ul class="submenu-items">
-                                <li class="submenu-item" id="nav-routes">
+                                <li class="submenu-item active" id="nav-routes">
                                     <a href="#">Optimizador de Rutas</a>
                                 </li>
                             </ul>
@@ -129,8 +129,6 @@ class DashboardView {
         const explorerItem = document.getElementById('nav-explorer');
         explorerItem && explorerItem.addEventListener('click', (e) => {
             e.preventDefault();
-            this._setActiveMenuItem('nav-explorer');
-            handlers.explorer && handlers.explorer();
         });
 
         const routesItem = document.getElementById('nav-routes');
